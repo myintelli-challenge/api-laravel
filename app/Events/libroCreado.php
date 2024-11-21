@@ -11,6 +11,9 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use App\Libros;
 
+/**
+ * Este evento se ejecuta cuando se crea un nuevo libro
+ */
 class libroCreado
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
@@ -18,8 +21,9 @@ class libroCreado
     public $libro;
 
     /**
-     * Create a new event instance.
+     * Crea una instancia del evento
      *
+     * @param \App\Libros $libros
      * @return void
      */
     public function __construct(Libros $libro)
