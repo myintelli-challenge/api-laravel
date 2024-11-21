@@ -20,6 +20,15 @@ php artisan serve
 
 Una vez se ejecute el comando final, el proyecto estará corriendo en el puerto 8000
 
+Los datos de conexión que están en .env son:
+```bash
+    host: 127.0.0.1
+    puerto: 5432
+    database: _kadre
+    username: postgres
+    password: 1234
+```
+
 ## **🚀 API**
 
 Se adjunta en el correo un archivo JSON con la colección generada en PostMan con las peticiones necesarias, para las peticiones que lo requieran existe el request en el BODY
